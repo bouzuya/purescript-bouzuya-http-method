@@ -9,3 +9,7 @@ HTTP method.
 ```
 bower install purescript-bouzuya-http-method
 ```
+
+## How to build
+
+See: [`.travis.yml`](.travis.yml).

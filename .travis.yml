@@ -3,5 +3,8 @@ node_js:
   - "10"
   - "8"
   - "6"
-before_install:
-  - npm i -g npm@latest # for node v6
+script:
+  - npm run --silent deps:build
+  - npm run --silent build
+  - npm run --silent deps:test
+  - npm run --silent test

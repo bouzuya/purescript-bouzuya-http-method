@@ -26,17 +26,17 @@
     "url": "git+https://github.com/bouzuya/purescript-bouzuya-http-method.git"
   },
   "scripts": {
-    "bower:install": "bower install",
-    "build": "npm-run-all -p 'build:*'",
-    "build:docs": "pulp docs",
-    "build:js": "pulp build",
-    "clean": "rimraf .pulp-cache output",
-    "prepare": "npm-run-all -s bower:install clean build",
+    "build": "pulp build",
+    "clean": "rimraf .pulp-cache generated-docs output",
+    "deps": "npm-run-all -p 'deps:*'",
+    "deps:build": "bower install --production",
+    "deps:test": "bower install",
+    "docs": "pulp docs",
     "repl": "pulp repl",
     "test": "pulp test",
     "watch": "npm-run-all -p 'watch:*'",
+    "watch:build": "pulp --watch build",
     "watch:docs": "pulp --watch docs",
-    "watch:js": "pulp --watch build",
     "watch:test": "pulp --watch test"
   }
 }
