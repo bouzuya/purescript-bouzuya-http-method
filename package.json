@@ -21,6 +21,7 @@
   "keywords": [],
   "license": "MIT",
   "main": "index.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bouzuya/purescript-bouzuya-http-method.git"
