@@ -1,7 +1,7 @@
 {
   "name": "purescript-bouzuya-http-method",
-  "description": "tamaru",
-  "version": "1.0.0",
+  "description": "HTTP method",
+  "version": "0.1.0",
   "author": {
     "email": "m@bouzuya.net",
     "name": "bouzuya",
