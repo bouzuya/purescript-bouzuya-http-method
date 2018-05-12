@@ -34,6 +34,7 @@
     "deps:test": "bower install",
     "docs": "pulp docs",
     "pulp:publish": "echo $GITHUB_TOKEN | pulp login && pulp publish --no-push",
+    "pulp:version": "pulp version",
     "repl": "pulp repl",
     "test": "pulp test",
     "watch": "npm-run-all -p 'watch:*'",
