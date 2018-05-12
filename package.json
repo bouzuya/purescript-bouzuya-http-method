@@ -27,7 +27,7 @@
     "url": "git+https://github.com/bouzuya/purescript-bouzuya-http-method.git"
   },
   "scripts": {
-    "build": "pulp build",
+    "build": "pulp build --modules Bouzuya.HTTP.Method",
     "clean": "rimraf .pulp-cache generated-docs output",
     "deps": "npm-run-all -p 'deps:*'",
     "deps:build": "bower install --production",
@@ -38,7 +38,7 @@
     "repl": "pulp repl",
     "test": "pulp test",
     "watch": "npm-run-all -p 'watch:*'",
-    "watch:build": "pulp --watch build",
+    "watch:build": "pulp --watch build --modules Bouzuya.HTTP.Method",
     "watch:docs": "pulp --watch docs",
     "watch:test": "pulp --watch test"
   }
