@@ -6,11 +6,7 @@ HTTP method.
 
 [![Travis CI][travis-ci-badge]][travis-ci]
 [![Bower][bower-badge]][bower]
-
-[bower]: https://github.com/bouzuya/purescript-bouzuya-http-method
-[bower-badge]: https://img.shields.io/bower/v/purescript-bouzuya-http-method.svg
-[travis-ci]: https://travis-ci.org/bouzuya/purescript-bouzuya-http-method
-[travis-ci-badge]: https://img.shields.io/travis/bouzuya/purescript-bouzuya-http-method.svg
+[![Pursuit][pursuit-badge]][pursuit]
 
 ## Installation
 
@@ -20,7 +16,7 @@ bower install purescript-bouzuya-http-method
 
 ## Documentation
 
-Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-bouzuya-http-method).
+Module documentation is [published on Pursuit][pursuit].
 
 ## How to build
 
@@ -41,3 +37,10 @@ $ git push origin master
 $ git push --tags
 $ # npm run pulp:publish # run by Travis CI
 ```
+
+[bower]: https://github.com/bouzuya/purescript-bouzuya-http-method
+[bower-badge]: https://img.shields.io/bower/v/purescript-bouzuya-http-method.svg
+[pursuit]: https://pursuit.purescript.org/packages/purescript-bouzuya-http-method
+[pursuit-badge]: https://pursuit.purescript.org/packages/purescript-bouzuya-http-method/badge
+[travis-ci]: https://travis-ci.org/bouzuya/purescript-bouzuya-http-method
+[travis-ci-badge]: https://img.shields.io/travis/bouzuya/purescript-bouzuya-http-method.svg
