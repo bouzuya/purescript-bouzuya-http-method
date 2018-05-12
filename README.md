@@ -18,6 +18,10 @@ HTTP method.
 bower install purescript-bouzuya-http-method
 ```
 
+## Documentation
+
+Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-bouzuya-http-method).
+
 ## How to build
 
 See: [`.travis.yml`](.travis.yml).
