@@ -1,11 +1,6 @@
 {
   "name": "purescript-bouzuya-http-method",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "output"
-  ],
+  "description": "HTTP method",
   "dependencies": {
     "purescript-foldable-traversable": "^3.7.1",
     "purescript-maybe": "^3.1.0",
@@ -14,5 +9,17 @@
   "devDependencies": {
     "purescript-psci-support": "^3.0.0",
     "purescript-test-unit": "^13.0.0"
+  },
+  "homepage": "https://github.com/bouzuya/purescript-bouzuya-http-method#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouzuya/purescript-bouzuya-http-method.git"
   }
 }
