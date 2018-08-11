@@ -28,9 +28,7 @@
   "scripts": {
     "build": "pulp build --modules Bouzuya.HTTP.Method",
     "clean": "rimraf .pulp-cache generated-docs output",
-    "deps": "npm-run-all -p 'deps:*'",
-    "deps:build": "bower install --production",
-    "deps:test": "bower install",
+    "deps": "psc-package install",
     "docs": "pulp docs",
     "psc-package": "psc-package",
     "pulp:publish": "echo $GITHUB_TOKEN | pulp login && echo y | pulp publish --no-push",
