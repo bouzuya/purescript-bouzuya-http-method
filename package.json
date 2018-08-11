@@ -13,6 +13,7 @@
   "devDependencies": {
     "bower": "^1.8.4",
     "npm-run-all": "^4.1.2",
+    "psc-package": "^0.3.2",
     "pulp": "^12.2.0",
     "purescript": "^0.11.7",
     "rimraf": "^2.6.2"
@@ -33,6 +34,7 @@
     "deps:build": "bower install --production",
     "deps:test": "bower install",
     "docs": "pulp docs",
+    "psc-package": "psc-package",
     "pulp:publish": "echo $GITHUB_TOKEN | pulp login && echo y | pulp publish --no-push",
     "pulp:version": "pulp version",
     "repl": "pulp repl",
