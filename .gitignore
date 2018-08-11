@@ -2,7 +2,6 @@
 /.psa*
 /.psc*
 /.psc-package/
-/.pulp-cache/
 /.purs*
 /generated-docs/
 /node_modules/

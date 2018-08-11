@@ -26,18 +26,10 @@
     "url": "git+https://github.com/bouzuya/purescript-bouzuya-http-method.git"
   },
   "scripts": {
-    "build": "pulp build --modules Bouzuya.HTTP.Method",
-    "clean": "rimraf .pulp-cache generated-docs output",
+    "build": "psc-package sources | xargs purs compile 'src/**/*.purs' 'test/**/*.purs'",
+    "clean": "rimraf output",
     "deps": "psc-package install",
-    "docs": "pulp docs",
     "psc-package": "psc-package",
-    "pulp:publish": "echo $GITHUB_TOKEN | pulp login && echo y | pulp publish --no-push",
-    "pulp:version": "pulp version",
-    "repl": "pulp repl",
-    "test": "pulp test",
-    "watch": "npm-run-all -p 'watch:*'",
-    "watch:build": "pulp --watch build --modules Bouzuya.HTTP.Method",
-    "watch:docs": "pulp --watch docs",
-    "watch:test": "pulp --watch test"
+    "test": "node -e 'require(\"./output/Test.Main/index\").main()'"
   }
 }
