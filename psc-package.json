@@ -1,0 +1,12 @@
+{
+  "name": "purescript-bouzuya-http-method",
+  "set": "psc-0.12.0-20180803",
+  "source": "https://github.com/purescript/package-sets.git",
+  "depends": [
+    "test-unit",
+    "psci-support",
+    "foldable-traversable",
+    "maybe",
+    "prelude"
+  ]
+}
