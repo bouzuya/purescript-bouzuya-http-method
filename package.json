@@ -27,7 +27,7 @@
   },
   "scripts": {
     "build": "psc-package sources | xargs purs compile 'src/**/*.purs' 'test/**/*.purs'",
-    "clean": "rimraf output",
+    "clean": "rimraf generated-docs output",
     "docs": "psc-package sources | xargs purs docs 'src/**/*.purs' --format html",
     "postinstall": "psc-package install",
     "psc-package": "psc-package",
