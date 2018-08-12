@@ -28,8 +28,8 @@
   "scripts": {
     "build": "psc-package sources | xargs purs compile 'src/**/*.purs' 'test/**/*.purs'",
     "clean": "rimraf output",
-    "deps": "psc-package install",
     "docs": "psc-package sources | xargs purs docs 'src/**/*.purs' --format html",
+    "postinstall": "psc-package install",
     "psc-package": "psc-package",
     "purs": "purs",
     "test": "node -e 'require(\"./output/Test.Main/index\").main()'"
