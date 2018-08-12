@@ -7,10 +7,6 @@ HTTP method.
 [![Travis CI][travis-ci-badge]][travis-ci]
 [![Pursuit][pursuit-badge]][pursuit]
 
-## Documentation
-
-Module documentation is [published on Pursuit][pursuit].
-
 ## How to build
 
 See: [`.travis.yml`](.travis.yml).
