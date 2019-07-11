@@ -3,14 +3,11 @@ module Bouzuya.HTTP.Method
   , fromString
   ) where
 
-import Data.Boolean (otherwise)
-import Data.Eq (class Eq, (/=), (==))
-import Data.Foldable (all)
-import Data.HeytingAlgebra ((&&))
-import Data.Maybe (Maybe(..))
-import Data.Ord ((>=))
-import Data.Semigroup ((<>))
-import Data.Show (class Show, show)
+import Prelude
+
+import Data.Foldable as Foldable
+import Data.Maybe (Maybe)
+import Data.Maybe as Maybe
 
 foreign import indexOf :: String -> Char -> Int
 foreign import length :: String -> Int
@@ -60,21 +57,21 @@ alphaCharsString :: String
 alphaCharsString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 fromString :: String -> Maybe Method
-fromString "CONNECT" = Just CONNECT
-fromString "DELETE" = Just DELETE
-fromString "GET" = Just GET
-fromString "HEAD" = Just HEAD
-fromString "OPTIONS" = Just OPTIONS
-fromString "PATCH" = Just PATCH
-fromString "POST" = Just POST
-fromString "PUT" = Just PUT
-fromString "TRACE" = Just TRACE
+fromString "CONNECT" = Maybe.Just CONNECT
+fromString "DELETE" = Maybe.Just DELETE
+fromString "GET" = Maybe.Just GET
+fromString "HEAD" = Maybe.Just HEAD
+fromString "OPTIONS" = Maybe.Just OPTIONS
+fromString "PATCH" = Maybe.Just PATCH
+fromString "POST" = Maybe.Just POST
+fromString "PUT" = Maybe.Just PUT
+fromString "TRACE" = Maybe.Just TRACE
 fromString s
-  | isMethodByConvension s = Just (CUSTOM s)
-  | otherwise = Nothing
+  | isMethodByConvension s = Maybe.Just (CUSTOM s)
+  | otherwise = Maybe.Nothing
 
 isLetter :: String -> Boolean
-isLetter s = all isLetterChar (toCharArray s)
+isLetter s = Foldable.all isLetterChar (toCharArray s)
 
 isLetterChar :: Char -> Boolean
 isLetterChar c = (indexOf alphaCharsString c) >= 0
@@ -86,7 +83,7 @@ isMethod :: String -> Boolean
 isMethod = isToken
 
 isToken :: String -> Boolean
-isToken s = s /= "" && all isTokenChar (toCharArray s)
+isToken s = s /= "" && Foldable.all isTokenChar (toCharArray s)
 
 isTokenChar :: Char -> Boolean
 isTokenChar c = (indexOf tokenCharsString c) >= 0
