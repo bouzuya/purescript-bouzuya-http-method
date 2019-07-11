@@ -12,8 +12,7 @@
   },
   "devDependencies": {
     "psc-package": "^0.3.2",
-    "purescript": "^0.12.0",
-    "rimraf": "^2.6.2"
+    "purescript": "^0.12.0"
   },
   "homepage": "https://github.com/bouzuya/purescript-bouzuya-http-method#readme",
   "keywords": [],
@@ -26,7 +25,6 @@
   },
   "scripts": {
     "build": "psc-package sources | xargs purs compile 'src/**/*.purs' 'test/**/*.purs'",
-    "clean": "rimraf generated-docs output",
     "docs": "psc-package sources | xargs purs docs 'src/**/*.purs' --format html",
     "postinstall": "psc-package install",
     "psc-package": "psc-package",
