@@ -11,8 +11,8 @@
     "url": "https://github.com/bouzuya/purescript-bouzuya-http-method/issues"
   },
   "devDependencies": {
-    "psc-package": "^0.3.2",
-    "purescript": "^0.13.2"
+    "purescript": "^0.13.2",
+    "spago": "^0.8.5"
   },
   "homepage": "https://github.com/bouzuya/purescript-bouzuya-http-method#readme",
   "keywords": [],
@@ -24,11 +24,10 @@
     "url": "git+https://github.com/bouzuya/purescript-bouzuya-http-method.git"
   },
   "scripts": {
-    "build": "psc-package sources | xargs purs compile 'src/**/*.purs' 'test/**/*.purs'",
-    "docs": "psc-package sources | xargs purs docs 'src/**/*.purs' --format html",
-    "postinstall": "psc-package install",
-    "psc-package": "psc-package",
+    "build": "spago build",
+    "docs": "spago docs",
     "purs": "purs",
-    "test": "node -e 'require(\"./output/Test.Main/index\").main()'"
+    "spago": "spago",
+    "test": "spago test"
   }
 }

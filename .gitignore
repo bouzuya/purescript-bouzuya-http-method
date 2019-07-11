@@ -1,8 +1,6 @@
 /.env*
-/.psa*
 /.psc*
-/.psc-package/
-/.purs*
+/.spago/
 /generated-docs/
 /node_modules/
 /output/
